@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio3</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            background-image: url("img/fundo.webp");
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+
+        .jogo-da-memoria {
+            display: grid;
+            grid-template-columns: repeat(3, 100px);
+            grid-gap: 10px;
+        }
+
+        .carta-da-memoria {
+            width: 100px;
+            height: 100px;
+            background-color:pink;
+            border: 1px solid palevioletred;
+            color: white;
+            font-size: 24px;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .carta-da-memoria.virada {
+            background-color: rgb(235, 0, 129);
+            color: white;
+        }
+        h2{
+            color: rgb(235, 0, 129);
+            transition: 0.2s ease-in-out;
+        }
+        h2:hover{
+            color: pink;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>Jogo da memória🎮🤔</h2>
+    <div class="jogo-da-memoria">
+        <button class="carta-da-memoria" data-numero="1"></button>
+        <button class="carta-da-memoria" data-numero="2"></button>
+        <button class="carta-da-memoria" data-numero="3"></button>
+        <button class="carta-da-memoria" data-numero="1"></button>
+        <button class="carta-da-memoria" data-numero="2"></button>
+        <button class="carta-da-memoria" data-numero="3"></button>
+        <button class="carta-da-memoria" data-numero="4"></button>
+        <button class="carta-da-memoria" data-numero="4"></button>
+        <button class="carta-da-memoria" data-numero="5"></button>
+    </div>
+    <script src="exercicio3.js"></script>
+</body>
+</html>
+
+
